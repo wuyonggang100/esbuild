@@ -561,7 +561,7 @@ func runImpl(osArgs []string) int {
 		}
 
 		// Write the output to stdout
-		os.Stdout.Write(result.JS)
+		os.Stdout.Write(result.Code)
 
 	case err != nil:
 		logger.PrintErrorToStderr(osArgs, err.Error())

@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+**This release contains backwards-incompatible changes.** It has been released as a new minor version to reflect this (as [recommended by npm](https://docs.npmjs.com/misc/semver)). The breaking changes are as follows:
+
+* Changed the transform API result object
+
+    For the transform API, the return values `js` and `jsSourceMap` have been renamed to `code` and `map` respectively. This is because esbuild now supports CSS as a first-class content type, and returning CSS code in a variable called `js` made no sense.
+
 ## 0.7.21
 
 * Use bracketed escape codes for non-BMP characters
